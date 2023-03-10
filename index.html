@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script>
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			if (
+				localStorage.theme === 'dark' ||
+				(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+			) {
+				document.documentElement.classList.add('dark');
+			} else {
+				document.documentElement.classList.remove('dark');
+			}
+			// Whenever the user explicitly chooses light mode
+			// localStorage.theme = 'light'
+
+			// Whenever the user explicitly chooses dark mode
+			// localStorage.theme = 'dark'
+
+			// Whenever the user explicitly chooses to respect the OS preference
+			// localStorage.removeItem('theme')
+		</script>
+
+		<meta http-equiv="content-security-policy" content="">
+		<link href="./_app/immutable/assets/_layout.79c0b68f.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.e2626913.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.f98f3a93.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c414402f.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.7dd6ef62.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.5cddbfa8.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.js.984db11e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.da46b06b.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_page.svelte.92a370e7.js">
+	</head>
+	<body
+		data-sveltekit-preload-data="hover"
+		class="bg-background-light dark:bg-background-dark ext-center text-background-on-light dark:text-background-on-dark"
+	>
+		<div
+			class="min-h-screen bg-gradient-to-r from-background-light to-secondary-light/5 dark:from-background-dark dark:to-secondary-dark/5"
+		>
+			
+
+
+<main class="py-40 px-4 border-b shadow-2xl sm:px-6 md:px-8 border-primary-light/40 dark:border-primary-dark/40"><div class="grid justify-items-center space-y-12 mx-auto"><h1 class="display-large">Welcome to Futino Web-Template</h1>
+        <ul><li><a class="link" href="https://futi.no">Futino</a></li>
+            <li><a class="link" href="https://web-template.futi.no">Web-Template</a></li>
+            <li><a class="link" href="https://github.com/Futino/web-template">Source Code</a></li></ul></div></main>
+
+
+			
+			<script>
+				{
+					__sveltekit_rd9p87 = {
+						env: {},
+						base: new URL(".", location).pathname.slice(0, -1),
+						element: document.currentScript.parentElement
+					};
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.e2626913.js"),
+						import("./_app/immutable/entry/app.7dd6ef62.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_rd9p87.element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		
+		</div>
+	</body>
+</html>
